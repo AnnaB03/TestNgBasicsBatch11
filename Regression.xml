@@ -2,22 +2,15 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
 
-
-    <listeners>
-<listener class-name="class03.listenersClass"/>
-    </listeners>
-
-
-    <test verbose="2" preserve-order="true" name="Regression">
+    <test verbose="2" preserve-order="true" name="C:\Users\annab\IdeaProjects\TestNgBasicsBatch11\src\class02\beforeSuitAndBeforeTest.java">
         <groups>
             <run>
                 <include name="regression"/>
             </run>
         </groups>
-        <classes>
+        <packages>
+            <package name="class03"/>
 
-            <class name="class03.dataProviderDemo"/>
-        </classes>
+        </packages>
     </test>
-
 </suite>
