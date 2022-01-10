@@ -2,14 +2,12 @@ package class02;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import utils.commonMethods;
 
-import java.util.concurrent.TimeUnit;
+
+
 
 public class loginTest extends commonMethods {
 
@@ -18,7 +16,6 @@ public class loginTest extends commonMethods {
 
 
     //@Test -- perform login
-
     @Test(groups = "regression", enabled = false)
     public void adminLogin(){
         driver.findElement(By.id("txtUsername")).sendKeys("Admin");
@@ -37,6 +34,7 @@ public class loginTest extends commonMethods {
             System.out.println("Test is failed");
         }
     }
+
 
     //post condition @after method -- close browser
 
